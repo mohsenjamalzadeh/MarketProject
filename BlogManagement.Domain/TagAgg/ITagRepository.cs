@@ -6,7 +6,7 @@ namespace BlogManagement.Domain.TagAgg
     public interface ITagRepository:IRepository<long,Tag>
     {
         List<TagViewModel> GetAll(TagSearchModel searchModel);
-        EditTag GetDetails(long id);
+        EditTag? GetDetails(long id);
     }
 
 
