@@ -33,7 +33,7 @@ namespace BlogManagement.Infrastructure.EfCore.Repository
 
         public EditAuthor? GetDetails(long id)
         {
-            var query = _context.Authors.Select(p => new EditAuthor
+            var query = _context.Authors.AsNoTracking().Select(p => new EditAuthor
             {
                 Id = p.Id,
                 Name = p.Name,

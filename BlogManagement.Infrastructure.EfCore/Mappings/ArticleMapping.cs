@@ -19,7 +19,7 @@ namespace BlogManagement.Infrastructure.EfCore.Mappings
             builder.Property(p => p.KeyWords).HasMaxLength(80).IsRequired();
             builder.Property(p => p.MetaDescription).HasMaxLength(150).IsRequired();
             builder.Property(p => p.ShortDescription).HasMaxLength(300).IsRequired();
-            builder.Property(p => p.CanonicalAddress).HasMaxLength(1000).IsRequired();
+            builder.Property(p => p.CanonicalAddress).HasMaxLength(1000).IsRequired(false);
 
             builder.HasOne(p => p.ArticleCategory)
                 .WithMany(p => p.Articles)

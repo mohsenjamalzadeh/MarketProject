@@ -6,7 +6,7 @@ namespace _01_Framework.Domain
     {
         void Create(T entity);
         T? Get(TKey key);
-        T? GetBy(Expression<Func<T>> expression);
+        T? GetBy(Expression<Func<T,bool>> expression);
         List<T> GetAll();
         bool IsExist(Expression<Func<T, bool>> expression);
         void SaveChange();

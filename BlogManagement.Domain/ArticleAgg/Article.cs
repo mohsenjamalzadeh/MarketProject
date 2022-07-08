@@ -7,20 +7,20 @@ namespace BlogManagement.Domain.ArticleAgg
 {
     public class Article:EntityBase
     {
-        public string? Title { get;private set; }
-        public string? Content { get;private set; }
-        public string? Picture { get;private set; }
-        public DateTime? PublishDate { get;private set; }
+        public string Title { get;private set; }
+        public string Content { get;private set; }
+        public string Picture { get;private set; }
+        public DateTime PublishDate { get;private set; }
         public int NumView { get;private set; }
         public int NumVote{ get;private set; }
         public bool IsActive { get;private set; }
         public int Studytime { get;private set; }
-        public string? Slug { get; private set; }
-        public string? PictureAlt { get; private set; }
-        public string? PictureTitle { get; private set; }
-        public string? KeyWords { get; private set; }
-        public string? MetaDescription { get; private set; }
-        public string? ShortDescription { get; private set; }
+        public string Slug { get; private set; }
+        public string PictureAlt { get; private set; }
+        public string PictureTitle { get; private set; }
+        public string KeyWords { get; private set; }
+        public string MetaDescription { get; private set; }
+        public string ShortDescription { get; private set; }
         public string? CanonicalAddress { get;private set; }
         public long ArticleCategoryId { get;private set; }
         public long AuthorId { get;private set; }
@@ -30,9 +30,10 @@ namespace BlogManagement.Domain.ArticleAgg
         public Author Author { get;private set; }
 
 
-        public Article(string? title, string? content, string? picture,
-            DateTime? publishDate, int studytime, string? slug, string? pictureAlt,
-            string? pictureTitle, string? keyWords, string? metaDescription, string? canonicalAddress,long articleCategoryId,long authorId,string shortDescription)
+        public Article(string title, string content, string picture,
+            DateTime publishDate, int studytime, string slug, string pictureAlt,
+            string pictureTitle, string keyWords, string metaDescription, string canonicalAddress,
+            long articleCategoryId,long authorId,string shortDescription)
         {
             Title = title;
             Content = content;
@@ -53,9 +54,9 @@ namespace BlogManagement.Domain.ArticleAgg
             NumVote = 0;
         }
 
-        public void Edit(string? title, string? content, string? picture,
-            DateTime? publishDate, int studytime, string? slug, string? pictureAlt,
-            string? pictureTitle, string? keyWords, string? metaDescription, string? canonicalAddress,
+        public void Edit(string title, string content, string picture,
+            DateTime publishDate, int studytime, string slug, string pictureAlt,
+            string pictureTitle, string keyWords, string metaDescription, string canonicalAddress,
             long articleCategoryId,long authorId,string shortDescription)
         {
             Title = title;

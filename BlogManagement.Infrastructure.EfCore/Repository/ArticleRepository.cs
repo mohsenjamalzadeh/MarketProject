@@ -1,5 +1,6 @@
 ﻿using _01_Framework.Infrastructure;
 using BlogManagement.Application.Contracts;
+using BlogManagement.Application.Contracts.Article;
 using BlogManagement.Domain.ArticleAgg;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,7 +19,7 @@ namespace BlogManagement.Infrastructure.EfCore.Repository
 
         public EditArticle? GetDetails(long id)
         {
-            var query = _context.Articles.Select(p => new EditArticle
+            var query = _context.Articles.AsNoTracking().Select(p => new EditArticle
             {
                 Id = p.Id,
                 Slug = p.Slug,

@@ -24,7 +24,7 @@ namespace _01_Framework.Infrastructure
             return _context.Find<T>(key);
         }
 
-        public T? GetBy(Expression<Func<T>> expression)
+        public T? GetBy(Expression<Func<T,bool>> expression)
         {
             return _context.Set<T>().Find(expression);
         }

@@ -36,7 +36,7 @@ namespace BlogManagement.Infrastructure.EfCore.Repository
 
         public EditArticleCategory? GetDetails(long id)
         {
-            var query = _context.ArticleCategories.Select(p => new EditArticleCategory
+            var query = _context.ArticleCategories.AsNoTracking().Select(p => new EditArticleCategory
             {
                Name = p.Name,
                Description = p.Description,

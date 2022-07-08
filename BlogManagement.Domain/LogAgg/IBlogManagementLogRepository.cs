@@ -2,8 +2,8 @@
 
 namespace BlogManagement.Domain.LogAgg
 {
-    public interface IBlogManagementLogRepository:IRepository<long,LogBlogManagement>
+    public interface IBlogManagementLogRepository
     {
-
+        void Log(LogBlogManagement logBlogManagement);
     }
 }

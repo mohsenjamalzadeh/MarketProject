@@ -1,4 +1,4 @@
-﻿namespace BlogManagement.Application.Contracts;
+﻿namespace BlogManagement.Application.Contracts.Article;
 
 public class EditArticle : CreateArticle
 {

@@ -11,7 +11,7 @@
             return this;
         }
 
-        public OperationResult Unsuccessful(string message)
+        public OperationResult Failed(string message)
         {
             IsSuccess = false;
             return this;

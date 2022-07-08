@@ -20,7 +20,7 @@ namespace BlogManagement.Infrastructure.EfCore.Repository
 
         public EditTag? GetDetails(long id)
         {
-            var query = _context.Tags.Select(p => new EditTag
+            var query = _context.Tags.AsNoTracking().Select(p => new EditTag
             {
                 Name = p.Name,
                 Id = p.Id
