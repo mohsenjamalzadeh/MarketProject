@@ -3,5 +3,5 @@
 public class ArticleCategorySearchModel
 {
     public string? Name { get; set; }
-    public bool? InActive { get; set; }
+    public bool InActive { get; set; }
 }

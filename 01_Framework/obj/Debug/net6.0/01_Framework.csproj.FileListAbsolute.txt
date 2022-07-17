@@ -1,0 +1,12 @@
+F:\Projects\Market\01_Framework\bin\Debug\net6.0\01_Framework.deps.json
+F:\Projects\Market\01_Framework\bin\Debug\net6.0\01_Framework.dll
+F:\Projects\Market\01_Framework\bin\Debug\net6.0\01_Framework.pdb
+F:\Projects\Market\01_Framework\obj\Debug\net6.0\01_Framework.csproj.AssemblyReference.cache
+F:\Projects\Market\01_Framework\obj\Debug\net6.0\01_Framework.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\Market\01_Framework\obj\Debug\net6.0\01_Framework.AssemblyInfoInputs.cache
+F:\Projects\Market\01_Framework\obj\Debug\net6.0\01_Framework.AssemblyInfo.cs
+F:\Projects\Market\01_Framework\obj\Debug\net6.0\01_Framework.csproj.CoreCompileInputs.cache
+F:\Projects\Market\01_Framework\obj\Debug\net6.0\01_Framework.dll
+F:\Projects\Market\01_Framework\obj\Debug\net6.0\refint\01_Framework.dll
+F:\Projects\Market\01_Framework\obj\Debug\net6.0\01_Framework.pdb
+F:\Projects\Market\01_Framework\obj\Debug\net6.0\ref\01_Framework.dll

@@ -129,7 +129,7 @@ namespace BlogManagement.Application
             {
                 _logRepository.Log(new LogBlogManagement(makerOperation: "Admin", placeOperation: "NotExist Article ", reason: ResultMessage.EntityNotFound, isSuccess: false));
             }
-            article.Add();
+            article.AddVote();
             _articleRepository.SaveChange();
 
         }

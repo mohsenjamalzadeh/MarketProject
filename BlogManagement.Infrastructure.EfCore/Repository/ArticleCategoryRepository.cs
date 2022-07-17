@@ -27,9 +27,10 @@ namespace BlogManagement.Infrastructure.EfCore.Repository
             }).AsNoTracking();
 
             if (!string.IsNullOrWhiteSpace(searchModel.Name))
-                query = query.Where(p => p.Name == searchModel.Name);
-            if(searchModel.InActive==false)
-                query=query.Where(p => !p.IsActive);
+                query = query.Where(p => p.Name.Contains(searchModel.Name) );
+
+            query = searchModel.InActive ? query.Where(p => p.IsActive==false) : query.Where(p => p.IsActive==true);
+               
 
             return query.OrderByDescending(p => p.Id).ToList();
         }

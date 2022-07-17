@@ -1,0 +1,15 @@
+F:\Projects\Market\BlogManagement.Application.Contracts\bin\Debug\net6.0\BlogManagement.Application.Contracts.deps.json
+F:\Projects\Market\BlogManagement.Application.Contracts\bin\Debug\net6.0\BlogManagement.Application.Contracts.dll
+F:\Projects\Market\BlogManagement.Application.Contracts\bin\Debug\net6.0\BlogManagement.Application.Contracts.pdb
+F:\Projects\Market\BlogManagement.Application.Contracts\bin\Debug\net6.0\01_Framework.dll
+F:\Projects\Market\BlogManagement.Application.Contracts\bin\Debug\net6.0\01_Framework.pdb
+F:\Projects\Market\BlogManagement.Application.Contracts\obj\Debug\net6.0\BlogManagement.Application.Contracts.csproj.AssemblyReference.cache
+F:\Projects\Market\BlogManagement.Application.Contracts\obj\Debug\net6.0\BlogManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\Market\BlogManagement.Application.Contracts\obj\Debug\net6.0\BlogManagement.Application.Contracts.AssemblyInfoInputs.cache
+F:\Projects\Market\BlogManagement.Application.Contracts\obj\Debug\net6.0\BlogManagement.Application.Contracts.AssemblyInfo.cs
+F:\Projects\Market\BlogManagement.Application.Contracts\obj\Debug\net6.0\BlogManagement.Application.Contracts.csproj.CoreCompileInputs.cache
+F:\Projects\Market\BlogManagement.Application.Contracts\obj\Debug\net6.0\BlogManagement.Application.Contracts.csproj.CopyComplete
+F:\Projects\Market\BlogManagement.Application.Contracts\obj\Debug\net6.0\BlogManagement.Application.Contracts.dll
+F:\Projects\Market\BlogManagement.Application.Contracts\obj\Debug\net6.0\refint\BlogManagement.Application.Contracts.dll
+F:\Projects\Market\BlogManagement.Application.Contracts\obj\Debug\net6.0\BlogManagement.Application.Contracts.pdb
+F:\Projects\Market\BlogManagement.Application.Contracts\obj\Debug\net6.0\ref\BlogManagement.Application.Contracts.dll

@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagement.Application"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagement.Infrastructure.EfCore", "BlogManagement.Infrastructure.EfCore\BlogManagement.Infrastructure.EfCore.csproj", "{1D065803-1DBB-4372-92D1-0916F65FCC67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagement.Infrastructure.Configuration", "BlogManagment.Infrastructure.Configoration\BlogManagement.Infrastructure.Configuration.csproj", "{701476BB-61A6-4724-8381-C1C029BEE0EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagement.Infrastructure.Configuration", "BlogManagment.Infrastructure.Configoration\BlogManagement.Infrastructure.Configuration.csproj", "{701476BB-61A6-4724-8381-C1C029BEE0EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagement.Infrastructure.Dapper", "BlogManagement.Infrastructure.Dapper\BlogManagement.Infrastructure.Dapper.csproj", "{C8C8E57B-4E24-4D80-B0A0-5D7F56BF5129}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagement.Infrastructure.Dapper", "BlogManagement.Infrastructure.Dapper\BlogManagement.Infrastructure.Dapper.csproj", "{C8C8E57B-4E24-4D80-B0A0-5D7F56BF5129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{DD128BFB-821B-4E02-BE91-11E58ECA09B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{C8C8E57B-4E24-4D80-B0A0-5D7F56BF5129}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8C8E57B-4E24-4D80-B0A0-5D7F56BF5129}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8C8E57B-4E24-4D80-B0A0-5D7F56BF5129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD128BFB-821B-4E02-BE91-11E58ECA09B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD128BFB-821B-4E02-BE91-11E58ECA09B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD128BFB-821B-4E02-BE91-11E58ECA09B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD128BFB-821B-4E02-BE91-11E58ECA09B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
