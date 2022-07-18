@@ -22,7 +22,7 @@ namespace BlogManagement.Application
             var operation = new OperationResult();
             if (_articleCategoryRepository.IsExist(p => p.Name == command.Name))
             {
-                _logRepository.Log(new LogBlogManagement(makerOperation:"Admin",placeOperation:"CreateArticleCategory",reason:ResultMessage.IsDuplicate,isSuccess:false));
+                _logRepository.Log(new LogBlogManagement(makerOperation:"Admin",placeOperation:"CreateArticleCategory",reason:ResultMessage.IsDuplicate+$"_ for Name{command.Name}",isSuccess:false));
                 return operation.Failed(ResultMessage.IsDuplicate);
             }
 
@@ -33,7 +33,7 @@ namespace BlogManagement.Application
             _articleCategoryRepository.Create(articleCategory);
             _articleCategoryRepository.SaveChange();
             
-            _logRepository.Log(new LogBlogManagement(makerOperation:"Admin",placeOperation:"CreateArticleCategory",reason:ResultMessage.IsSuccess,isSuccess:true));
+            _logRepository.Log(new LogBlogManagement(makerOperation:"Admin",placeOperation:"CreateArticleCategory",reason:ResultMessage.IsSuccess+$"_ for Name{command.Name}",isSuccess:true));
             return operation.Success();
 
         }
@@ -48,7 +48,7 @@ namespace BlogManagement.Application
                 return operation.Failed(ResultMessage.IsDuplicate);
             }
 
-            if (_articleCategoryRepository.IsExist(p => p.Name == command.Name && p.Id != command.Id))
+            if (_articleCategoryRepository.IsExist(p => (p.Name == command.Name && p.Id != command.Id)))
             {
                 _logRepository.Log(new LogBlogManagement(makerOperation:"Admin",placeOperation:"Edit ArticleCategory",reason:ResultMessage.IsDuplicate,isSuccess:false));
                 return operation.Failed(ResultMessage.IsDuplicate);

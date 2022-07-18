@@ -2,18 +2,19 @@
 {
     public class OperationResult
     {
-        public bool IsSuccess { get; set; }
+        public bool sucssesed { get; set; }
         public string? Message { get; set; }
 
         public OperationResult Success(string message="operation was done successfully" )
         {
-            IsSuccess = true;
+            sucssesed = true;
+            Message=message;
             return this;
         }
 
         public OperationResult Failed(string message)
-        {
-            IsSuccess = false;
+        {sucssesed = false;
+            Message=message;
             return this;
         }
     }

@@ -85,6 +85,8 @@ function CallBackHandler(data, action, form) {
     switch (action) {
         case "Message":
             alert(data.Message);
+            window.location.reload();
+
             break;
         case "Refresh":
             if (data.sucssesed) {

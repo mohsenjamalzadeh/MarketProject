@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="~/Administration/app-assets/vendors/css/prism.min.css">
     <link rel="stylesheet" type="text/css" href="~/Administration/app-assets/vendors/css/chartist.min.css">
     <link rel="stylesheet" type="text/css" href="~/Administration/app-assets/css/app.css">
-  
+
 </head>
 <body data-col="2-columns" class=" 2-columns ">
     <div class="wrapper">
@@ -133,16 +133,6 @@
 
         </div>
 
-
-
-
-
-        <div id="MainModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-            <div class="modal-dialog">
-                <div class="modal-content" id="ModalContent">
-                </div>
-            </div>
-        </div>
     </div>
 
     <aside id="notification-sidebar" class="notification-sidebar d-none d-sm-none d-md-block">
@@ -304,6 +294,14 @@
             </div>
         </div>
     </aside>
+
+    <div id="MainModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content" id="ModalContent" style="width:660px;">
+            </div>
+        </div>
+    </div>
+
     <!-- BEGIN VENDOR JS-->
     <script src="~/Administration/app-assets/vendors/js/core/jquery-3.3.1.min.js"></script>
     <script src="~/Administration/app-assets/vendors/js/core/popper.min.js"></script>
@@ -313,10 +311,7 @@
     <script src="~/Administration/app-assets/vendors/js/jquery.matchHeight-min.js"></script>
     <script src="~/Administration/app-assets/vendors/js/screenfull.min.js"></script>
     <script src="~/Administration/app-assets/vendors/js/pace/pace.min.js"></script>
-    <!-- BEGIN VENDOR JS-->
-    <!-- BEGIN PAGE VENDOR JS-->
     <script src="~/Administration/app-assets/vendors/js/chartist.min.js"></script>
-    <!-- END PAGE VENDOR JS-->
     <script src="~/Administration/app-assets/vendors/js/datatable/datatables.min.js"></script>
     <script src="~/Administration/app-assets/vendors/js/datatable/dataTables.buttons.min.js"></script>
     <script src="~/Administration/app-assets/vendors/js/datatable/buttons.flash.min.js"></script>
@@ -325,13 +320,15 @@
     <script src="~/Administration/app-assets/vendors/js/datatable/vfs_fonts.js"></script>
     <script src="~/Administration/app-assets/vendors/js/datatable/buttons.html5.min.js"></script>
     <script src="~/Administration/app-assets/vendors/js/datatable/buttons.print.min.js"></script>
-    <!-- BEGIN CONVEX JS-->
     <script src="~/Administration/app-assets/js/app-sidebar.js"></script>
     <script src="~/Administration/app-assets/js/notification-sidebar.js"></script>
-    <!-- END CONVEX JS-->
-    <!-- BEGIN PAGE LEVEL JS-->
     <script src="~/Administration/app-assets/js/dashboard-ecommerce.js"></script>
     <script src="~/Administration/app-assets/js/data-tables/datatable-advanced.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
     <script src="~/Administration/app-assets/js/Site.js"></script>
 
     @RenderSectionAsync("scribt",false);
