@@ -230,6 +230,10 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[2.1.4, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

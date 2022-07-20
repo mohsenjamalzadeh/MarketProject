@@ -709,7 +709,8 @@
         "dependencies": {
           "BlogManagement.Domain": "1.0.0",
           "Dapper": "2.0.123",
-          "Microsoft.Data.SqlClient": "2.1.4"
+          "Microsoft.Data.SqlClient": "2.1.4",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
         },
         "compile": {
           "bin/placeholder/BlogManagement.Infrastructure.Dapper.dll": {}

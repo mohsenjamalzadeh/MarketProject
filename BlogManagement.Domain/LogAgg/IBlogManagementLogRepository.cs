@@ -6,7 +6,7 @@ namespace BlogManagement.Domain.LogAgg
     public interface IBlogManagementLogRepository
     {
         void Log(LogBlogManagement logBlogManagement);
-        List<BlogManagementLogViewModel> GetAll(BlogManagementLogSearchModel searchModel);
+        List<BlogManagementLogViewModel> GetAll();
 
     }
 }

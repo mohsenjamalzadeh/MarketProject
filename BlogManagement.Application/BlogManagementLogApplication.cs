@@ -12,9 +12,9 @@ namespace BlogManagement.Application
             _blogManagementLog = blogManagementLog;
         }
 
-        public List<BlogManagementLogViewModel> GetAll(BlogManagementLogSearchModel searchModel)
+        public List<BlogManagementLogViewModel> GetAll()
         {
-            return _blogManagementLog.GetAll(searchModel);
+            return _blogManagementLog.GetAll();
         }
     }
 }

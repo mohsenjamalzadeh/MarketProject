@@ -2,6 +2,6 @@
 {
     public interface IBlogManagementLogApplication
     {
-        List<BlogManagementLogViewModel> GetAll(BlogManagementLogSearchModel searchModel);
+        List<BlogManagementLogViewModel> GetAll();
     }
 }

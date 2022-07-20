@@ -1,0 +1,112 @@
+﻿@page
+@model ServiceHost.Areas.Administration.Pages.Blog.Logs.IndexModel
+@{
+}
+
+<style>
+    .trueTbl {
+        background-color: #D1FFD1
+    }
+
+
+    .falseTbl {
+        background-color: #FFD1D1
+    }</style>
+
+
+<section id="hoverable-rows">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap bar-warning">
+                        <h4 class="card-title">Logs BlogManagement</h4>
+                    </div>
+
+                </div>
+                <div class="card-body" id="datatable">
+                    <div class="card-block">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Maker Operation</th>
+                                    <th>Place Operation</th>
+                                    <th>Reason</th>
+                                    <th>Creation Date</th>
+                                    <th>Result</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tblBody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <button type="button" class="btn btn-shades  btn-info col-1 m-1 " id="loadanotherdata">Load more data</button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+@section scribt
+{
+<script>
+
+    let currentPageNumber = 1;
+    let pageSize = 7;
+    let noMoreData = false;
+
+    $(document).ready(function() {
+        debugger;
+        loadPageData(currentPageNumber);
+        $("#loadanotherdata").on("click",
+            function() {
+
+
+                currentPageNumber += 1;
+                loadPageData(currentPageNumber);
+
+            });
+    });
+
+
+    function loadPageData(currentpagenum) {
+        var settings = {
+            "url": `https://localhost:7141/Administration/Blog/Logs?handler=LogsBlog`,
+            "method": "GET",
+            "timeout": 0,
+            "headers": {
+                "pageNumber":currentPageNumber ,
+                "pageSize": pageSize
+            }
+           
+        };
+        $.ajax(settings).done(function(response) {
+            let tblBody = $("#tblBody");
+
+            response.forEach(function(item, index) {
+                let tr = `<tr class='${item.isSuccess}Tbl'>
+                        <th scope="row">${item.id}</th>
+                        <td>${item.makerOperation}</td>
+                        <td>${item.placeOperation}</td>
+                        <td>${item.reason}</td>
+                        <td>${item.creationDate}</td>
+                        <td >${item.isSuccess}</td>
+              </tr>`;
+                tblBody.append(tr);
+            });
+        });
+    }
+
+
+</script>
+}
