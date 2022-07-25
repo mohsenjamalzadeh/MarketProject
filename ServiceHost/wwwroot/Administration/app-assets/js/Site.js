@@ -89,9 +89,9 @@ function CallBackHandler(data, action, form) {
 
             break;
         case "Refresh":
-            if (data.sucssesed) {
-                //hideModal()
-                //$("#datatable").load(location.href + " #datatable")
+            if (data.result.sucssesed) {
+                //hideModal();
+                //    $("#DataTables_Table_10").load(location.href + "#DataTables_Table_10");
                 window.location.reload();
             } else {
                 alert(data.message);
@@ -220,5 +220,23 @@ function handleAjaxCall(method, url, data) {
 //jQuery.validator.unobtrusive.adapters.addBool("FileExtentionAttr");
 
 
+$.validator.addMethod('maxsize',
+    function (value, element, params) {
+        debugger;
+        var size = element.files[0].size;
+        var maxSize = 1 * 1024 * 1024;
+        if (size > maxSize)
+            return false;
+        else {
+
+            return true;
+        }
+
+    });
+$.validator.unobtrusive.adapters.addBool('maxsize');
 
 
+
+$.validator.addMethod('extension', function(value, element, params) {
+});
+$.validator.unobtrusive.adapters.addBool('extension');

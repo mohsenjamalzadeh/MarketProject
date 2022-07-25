@@ -30,6 +30,7 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.ArticleCategory
 
         public JsonResult OnPostCreate(CreateArticleCategory command)
         {
+         
             var res = _articleCategoryApplication.CreateArticleCategory(command);
             return new JsonResult(res);
         }

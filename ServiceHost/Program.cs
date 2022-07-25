@@ -1,9 +1,12 @@
+using _01_Framework.Application;
 using BlogManagement.Infrastructure.Configuration;
+using ServiceHost;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 var connectionString = builder.Configuration.GetConnectionString("MarketDb");
+builder.Services.AddTransient<IFileUploader, FileUploader>();
 BlogManagementBootstrapper.Configure(builder.Services,connectionString);
 
 

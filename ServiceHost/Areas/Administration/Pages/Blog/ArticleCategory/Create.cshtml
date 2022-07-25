@@ -23,14 +23,14 @@
                                 <div class="form-group">
                                     <label asp-for="Name">Name Article Category</label>
                                     <input  asp-for="Name" type="text" class="form-control border-primary" onchange="makeSlug('Name','Slug')" >
-                                    <span asp-validation-for="Name" class="error"></span>
+                                    <span asp-validation-for="Name" class="error text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label asp-for="Slug">Slug</label>
                                     <input  asp-for="Slug" type="text"  class="form-control border-primary" >
-                                    <span asp-validation-for="Slug" class="error"></span>
+                                    <span asp-validation-for="Slug" class="error text-danger"></span>
 
                                 </div>
                             </div>
@@ -40,7 +40,7 @@
                                 <div class="form-group">
                                     <label asp-for="PictureTitle">PictureTitle</label>
                                     <input  asp-for="PictureTitle" type="text" class="form-control border-primary" >
-                                    <span asp-validation-for="PictureTitle" class="error"></span>
+                                    <span asp-validation-for="PictureTitle" class="error text-danger"></span>
 
                                 </div>
                             </div>
@@ -48,32 +48,41 @@
                                 <div class="form-group">
                                     <label asp-for="PictureAlt">PictureAlt</label>
                                     <input  asp-for="PictureAlt" type="text" class="form-control border-primary" >
-                                    <span asp-validation-for="PictureAlt" class="error"></span>
+                                    <span asp-validation-for="PictureAlt" class="error text-danger"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label asp-for="Picture">Picture</label>
-                            <input  asp-for="Picture" type="text" class="form-control border-primary" >
-                            <span asp-validation-for="Picture" class="error"></span>
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Upload</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input asp-for="Picture" type="file" class="custom-file-input" id="inputGroupFile01" accept="image/*">
+                                    <label  class="custom-file-label" for="inputGroupFile01">Choose file</label>
+
+                                </div>
+                            </div>
+                            <span asp-validation-for="Picture" class="error text-danger"></span>
+
                         </div>
 
                         <div class="form-group">
                             <label asp-for="KeyWords">KeyWords</label>
                             <input  asp-for="KeyWords" type="text" class="form-control border-primary" >
-                            <span asp-validation-for="KeyWords" class="error"></span>
+                            <span asp-validation-for="KeyWords" class="error text-danger"></span>
                         </div>
 
                         <div class="form-group">
                             <label asp-for="Description">Description</label>
                             <textarea rows="5"  asp-for="Description" type="text" class="form-control border-primary" onchange="fillField('Description','MetaDescription')"></textarea>
-                            <span asp-validation-for="Description" class="error"></span>
+                            <span asp-validation-for="Description" class="error text-danger"></span>
                         </div>
 
                         <div class="form-group">
                             <label asp-for="MetaDescription">MetaDescription</label>
                             <textarea rows="5"  asp-for="MetaDescription" type="text" class="form-control border-primary" ></textarea>
-                            <span asp-validation-for="MetaDescription" class="error"></span>
+                            <span asp-validation-for="MetaDescription" class="error text-danger"></span>
                         </div>
 
                     </div>

@@ -10,14 +10,15 @@ namespace BlogManagement.Application
     {
         private readonly IArticleCategoryRepository _articleCategoryRepository;
         private readonly IBlogManagementLogRepository _logRepository;
-
-        public ArticleCategoryApplication(IArticleCategoryRepository articleCategoryRepository, IBlogManagementLogRepository logRepository)
+        private readonly IFileUploader _fileUploader;
+        public ArticleCategoryApplication(IArticleCategoryRepository articleCategoryRepository, IBlogManagementLogRepository logRepository, IFileUploader fileUploader)
         {
             _articleCategoryRepository = articleCategoryRepository;
             _logRepository = logRepository;
+            _fileUploader = fileUploader;
         }
 
-        public OperationResult CreateArticleCategory(CreateArticleCategory command)
+        public async Task<OperationResult> CreateArticleCategory(CreateArticleCategory command)
         {
             var operation = new OperationResult();
             if (_articleCategoryRepository.IsExist(p => p.Name == command.Name))
@@ -26,8 +27,11 @@ namespace BlogManagement.Application
                 return operation.Failed(ResultMessage.IsDuplicate);
             }
 
-            var articleCategory = new ArticleCategory(command.Name, command.Picture, command.PictureAlt,
-                command.PictureTitle, command.Slug.Slugify(),
+            var slug=command.Slug.Slugify();
+            string picture =await _fileUploader.UploadAsync(command.Picture, $"Blog/ArticleCategory/{slug}/");
+
+            var articleCategory = new ArticleCategory(command.Name, picture, command.PictureAlt,
+                command.PictureTitle, slug,
                 command.KeyWords, command.Description, command.MetaDescription);
 
             _articleCategoryRepository.Create(articleCategory);
@@ -38,7 +42,7 @@ namespace BlogManagement.Application
 
         }
 
-        public OperationResult EditArticleCategory(EditArticleCategory command)
+        public async Task<OperationResult> EditArticleCategory(EditArticleCategory command)
         {
             var operation = new OperationResult();
             var articleCategory = _articleCategoryRepository.Get(command.Id);
@@ -53,12 +57,19 @@ namespace BlogManagement.Application
                 _logRepository.Log(new LogBlogManagement(makerOperation:"Admin",placeOperation:"Edit ArticleCategory",reason:ResultMessage.IsDuplicate,isSuccess:false));
                 return operation.Failed(ResultMessage.IsDuplicate);
             }
-            articleCategory.Edit(command.Name,command.Picture,
-                command.PictureAlt,command.PictureTitle,command.Slug.Slugify(),
+
+            var slug=command.Slug.Slugify();
+            string picture =await _fileUploader.UploadAsync(command.Picture, $"Blog/ArticleCategory/{slug}/");
+
+            articleCategory.Edit(command.Name,picture,
+                command.PictureAlt,command.PictureTitle,slug,
                 command.KeyWords,command.Description,command.MetaDescription);
 
             _articleCategoryRepository.SaveChange();
-            _logRepository.Log(new LogBlogManagement(makerOperation:"Admin",placeOperation:"Edit ArticleCategory",reason:ResultMessage.IsSuccess+$"_{command.Name} Edited",isSuccess:true));
+            _logRepository.Log(new LogBlogManagement(
+                makerOperation:"Admin",placeOperation:"Edit ArticleCategory",
+                reason:ResultMessage.IsSuccess+$"_{command.Name} Edited",
+                isSuccess:true));
             return operation.Success();
 
         }

@@ -16,5 +16,7 @@ namespace _0_Framework.Application
 
             return friendlyUrl;
         }
+
+  
     }
 }

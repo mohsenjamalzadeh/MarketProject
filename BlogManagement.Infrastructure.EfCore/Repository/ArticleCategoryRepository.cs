@@ -41,7 +41,7 @@ namespace BlogManagement.Infrastructure.EfCore.Repository
             {
                Name = p.Name,
                Description = p.Description,
-               Picture = p.Picture,
+               //Picture = p.Picture,
                PictureAlt = p.PictureAlt,
                PictureTitle=p.PictureTitle,
                MetaDescription = p.MetaDescription,

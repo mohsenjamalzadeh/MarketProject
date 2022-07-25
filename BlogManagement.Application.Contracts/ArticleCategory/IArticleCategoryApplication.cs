@@ -4,8 +4,8 @@ namespace BlogManagement.Application.Contracts.ArticleCategory
 {
     public interface IArticleCategoryApplication
     {
-        OperationResult CreateArticleCategory(CreateArticleCategory command);
-        OperationResult EditArticleCategory(EditArticleCategory command);
+        Task<OperationResult> CreateArticleCategory(CreateArticleCategory command);
+        Task<OperationResult> EditArticleCategory(EditArticleCategory command);
         List<ArticleCategoryViewModel> GetAll(ArticleCategorySearchModel searchModel);
         EditArticleCategory? GetDetails(long id);
         OperationResult Active(long id);

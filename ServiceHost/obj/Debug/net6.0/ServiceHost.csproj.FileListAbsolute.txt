@@ -74,3 +74,4 @@ F:\Projects\Market\ServiceHost\bin\Debug\net6.0\BlogManagement.Domain.pdb
 F:\Projects\Market\ServiceHost\bin\Debug\net6.0\BlogManagement.Infrastructure.Dapper.pdb
 F:\Projects\Market\ServiceHost\bin\Debug\net6.0\BlogManagement.Infrastructure.EfCore.pdb
 F:\Projects\Market\ServiceHost\obj\Debug\net6.0\ServiceHost.csproj.CopyComplete
+F:\Projects\Market\ServiceHost\obj\Debug\net6.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cs
