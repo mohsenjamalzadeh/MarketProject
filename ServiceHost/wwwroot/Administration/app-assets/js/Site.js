@@ -89,7 +89,7 @@ function CallBackHandler(data, action, form) {
 
             break;
         case "Refresh":
-            if (data.result.sucssesed) {
+            if (data.sucssesed) {
                 //hideModal();
                 //    $("#DataTables_Table_10").load(location.href + "#DataTables_Table_10");
                 window.location.reload();
@@ -190,39 +190,11 @@ function handleAjaxCall(method, url, data) {
     }
 }
 
-//jQuery.validator.addMethod("MaxFileSize",
-//    function (value, element, params) {
 
-//        var size = element.files[0].size;
-//        var maxSize = 3 * 1024 * 1024;
-//        if (size > maxSize)
-//            return false;
-//        else {
-//            return true;
-//        }
-//    });
-//jQuery.validator.unobtrusive.adapters.addBool("MaxFileSize");
-
-
-//jQuery.validator.addMethod("FileExtentionAttr",
-//    function (value, element, params) {
-//        let extention = element.files[0].type.split("/")[1];
-//        let formatFile = element.dataset.valFileformat;
-//        let ext = extention.toLocaleLowerCase();
-//        if (!formatFile.includes(ext))
-//            return false;
-//        else {
-//            return true;
-//        }
-
-
-//    });
-//jQuery.validator.unobtrusive.adapters.addBool("FileExtentionAttr");
 
 
 $.validator.addMethod('maxsize',
     function (value, element, params) {
-        debugger;
         var size = element.files[0].size;
         var maxSize = 1 * 1024 * 1024;
         if (size > maxSize)
@@ -237,6 +209,17 @@ $.validator.unobtrusive.adapters.addBool('maxsize');
 
 
 
-$.validator.addMethod('extension', function(value, element, params) {
-});
+$.validator.addMethod('extension',
+    function(value, element, params) {
+
+            let extention = element.files[0].type.split("/")[1];
+            let formatFile = element.dataset.valFileformat;
+            let ext = extention.toLocaleLowerCase();
+            if (!formatFile.includes(ext))
+                return false;
+            else {
+                return true;
+            }
+        
+    });
 $.validator.unobtrusive.adapters.addBool('extension');

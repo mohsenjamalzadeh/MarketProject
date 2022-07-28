@@ -12,9 +12,9 @@ namespace ServiceHost
         }
 
 
-        public Task<string> UploadAsync(IFormFile file, string path)
+        public async Task<string> UploadAsync(IFormFile file, string path)
         {
-            if (file == null) return Task.FromResult("");
+            if (file == null) return "";
 
             var directoryPath = $"{_hostEnvironment.WebRootPath}//Uploads//{path}";
 
@@ -24,11 +24,11 @@ namespace ServiceHost
 
             var filepath = directoryPath + fileName;
 
-            using var output = File.Create(filepath);
+           await using var output = File.Create(filepath);
 
-            file.CopyToAsync(output);
+            await file.CopyToAsync(output);
 
-            return Task.FromResult(path + fileName);
+            return $"{path}/{fileName}";
         }
 
         public Task<List<string>> UploadFilesAsync(List<IFormFile> files, string path)

@@ -17,4 +17,8 @@
     <ProjectReference Include="..\BlogManagment.Infrastructure.Configoration\BlogManagement.Infrastructure.Configuration.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Uploads\Blog\Authors\" />
+  </ItemGroup>
+
 </Project>

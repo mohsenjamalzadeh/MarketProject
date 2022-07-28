@@ -40,7 +40,9 @@ namespace _01_Framework.Application
 
         public void AddValidation(ClientModelValidationContext context)
         {
+            string myStringOutput = String.Join("/", _extension.Select(p => p.ToString()).ToArray());
             context.Attributes.Add("data-val-extension",GetErrorMessage());
+            context.Attributes.Add("data-val-FileFormat", myStringOutput);
         }
     }
 }

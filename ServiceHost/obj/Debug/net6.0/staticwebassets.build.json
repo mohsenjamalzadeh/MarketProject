@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7PpoMCXyqJ0TVOXQgbqfLXippmL+m4WWMeN/kWV9+d4=",
+  "Hash": "CgC4PObkfi2dtg1j0SQgpdeg4MssFOL5iC6H3foYLAo=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -20043,12 +20043,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\aa\\133029597054203901-t3yyvhsm5i1i.png",
+      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\csharp\\133034659407512661-Application-of-C-programming-language-2.png",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\",
       "BasePath": "_content/ServiceHost",
-      "RelativePath": "Uploads/Blog/ArticleCategory/aa/133029597054203901-t3yyvhsm5i1i.png",
+      "RelativePath": "Uploads/Blog/ArticleCategory/csharp/133034659407512661-Application-of-C-programming-language-2.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -20057,15 +20057,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\aa\\133029597054203901-t3yyvhsm5i1i.png"
+      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\csharp\\133034659407512661-Application-of-C-programming-language-2.png"
     },
     {
-      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\assad\\133032216980404854-حقوق تجارت.docx",
+      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\csharp\\133034661389224948-1.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\",
       "BasePath": "_content/ServiceHost",
-      "RelativePath": "Uploads/Blog/ArticleCategory/assad/133032216980404854-حقوق تجارت.docx",
+      "RelativePath": "Uploads/Blog/ArticleCategory/csharp/133034661389224948-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -20074,15 +20074,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\assad\\133032216980404854-حقوق تجارت.docx"
+      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\csharp\\133034661389224948-1.jpg"
     },
     {
-      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\cs\\133029588317391336-Application-of-C-programming-language-2.png",
+      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\programmer\\133034659635362266-t3yyvhsm5i1i.png",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\",
       "BasePath": "_content/ServiceHost",
-      "RelativePath": "Uploads/Blog/ArticleCategory/cs/133029588317391336-Application-of-C-programming-language-2.png",
+      "RelativePath": "Uploads/Blog/ArticleCategory/programmer/133034659635362266-t3yyvhsm5i1i.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -20091,15 +20091,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\cs\\133029588317391336-Application-of-C-programming-language-2.png"
+      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\programmer\\133034659635362266-t3yyvhsm5i1i.png"
     },
     {
-      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\csharp\\133029582854440117-Application-of-C-programming-language-2.png",
+      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\Authors\\mohsen\\133034213626558302-1.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\",
       "BasePath": "_content/ServiceHost",
-      "RelativePath": "Uploads/Blog/ArticleCategory/csharp/133029582854440117-Application-of-C-programming-language-2.png",
+      "RelativePath": "Uploads/Blog/Authors/mohsen/133034213626558302-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -20108,15 +20108,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\csharp\\133029582854440117-Application-of-C-programming-language-2.png"
+      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\Authors\\mohsen\\133034213626558302-1.jpg"
     },
     {
-      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\csharp\\133029609759527133-t3yyvhsm5i1i.png",
+      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\Authors\\mohsen\\133034214163526600-1.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\",
       "BasePath": "_content/ServiceHost",
-      "RelativePath": "Uploads/Blog/ArticleCategory/csharp/133029609759527133-t3yyvhsm5i1i.png",
+      "RelativePath": "Uploads/Blog/Authors/mohsen/133034214163526600-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -20125,15 +20125,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\csharp\\133029609759527133-t3yyvhsm5i1i.png"
+      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\Authors\\mohsen\\133034214163526600-1.jpg"
     },
     {
-      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\csharp\\133029613777256012-Application-of-C-programming-language-2.png",
+      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\Authors\\mohsen\\133034216050280416-1.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\",
       "BasePath": "_content/ServiceHost",
-      "RelativePath": "Uploads/Blog/ArticleCategory/csharp/133029613777256012-Application-of-C-programming-language-2.png",
+      "RelativePath": "Uploads/Blog/Authors/mohsen/133034216050280416-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -20142,15 +20142,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\csharp\\133029613777256012-Application-of-C-programming-language-2.png"
+      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\Authors\\mohsen\\133034216050280416-1.jpg"
     },
     {
-      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\csharp-s\\133029583521332132-Application-of-C-programming-language-2.png",
+      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\Authors\\mohsen\\133034217243633120-1.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\",
       "BasePath": "_content/ServiceHost",
-      "RelativePath": "Uploads/Blog/ArticleCategory/csharp-s/133029583521332132-Application-of-C-programming-language-2.png",
+      "RelativePath": "Uploads/Blog/Authors/mohsen/133034217243633120-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -20159,15 +20159,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\csharp-s\\133029583521332132-Application-of-C-programming-language-2.png"
+      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\Authors\\mohsen\\133034217243633120-1.jpg"
     },
     {
-      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\csharp-sdf\\133029583846726698-Application-of-C-programming-language-2.png",
+      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\Authors\\mohsen\\133034218722484471-1.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\",
       "BasePath": "_content/ServiceHost",
-      "RelativePath": "Uploads/Blog/ArticleCategory/csharp-sdf/133029583846726698-Application-of-C-programming-language-2.png",
+      "RelativePath": "Uploads/Blog/Authors/mohsen/133034218722484471-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -20176,15 +20176,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\csharp-sdf\\133029583846726698-Application-of-C-programming-language-2.png"
+      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\Authors\\mohsen\\133034218722484471-1.jpg"
     },
     {
-      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\d\\133029599722685379-t3yyvhsm5i1i.png",
+      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\Authors\\mohsen-jamalzadeh\\133034220530925221-Screenshot 2022-07-27 163445.png",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\",
       "BasePath": "_content/ServiceHost",
-      "RelativePath": "Uploads/Blog/ArticleCategory/d/133029599722685379-t3yyvhsm5i1i.png",
+      "RelativePath": "Uploads/Blog/Authors/mohsen-jamalzadeh/133034220530925221-Screenshot 2022-07-27 163445.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -20193,15 +20193,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\d\\133029599722685379-t3yyvhsm5i1i.png"
+      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\Authors\\mohsen-jamalzadeh\\133034220530925221-Screenshot 2022-07-27 163445.png"
     },
     {
-      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\hjhg\\133032127880718108-Screenshot (8).png",
+      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\Authors\\mohsen-jamalzadeh\\133034640671042612-1.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\",
       "BasePath": "_content/ServiceHost",
-      "RelativePath": "Uploads/Blog/ArticleCategory/hjhg/133032127880718108-Screenshot (8).png",
+      "RelativePath": "Uploads/Blog/Authors/mohsen-jamalzadeh/133034640671042612-1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -20210,15 +20210,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\hjhg\\133032127880718108-Screenshot (8).png"
+      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\Authors\\mohsen-jamalzadeh\\133034640671042612-1.jpg"
     },
     {
-      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\programmer\\133029576314136614-1.jpg",
+      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\Authors\\mohsen-jamalzadeh\\133034641382863131-Screenshot 2022-07-27 163445.png",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
       "ContentRoot": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\",
       "BasePath": "_content/ServiceHost",
-      "RelativePath": "Uploads/Blog/ArticleCategory/programmer/133029576314136614-1.jpg",
+      "RelativePath": "Uploads/Blog/Authors/mohsen-jamalzadeh/133034641382863131-Screenshot 2022-07-27 163445.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -20227,24 +20227,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\programmer\\133029576314136614-1.jpg"
-    },
-    {
-      "Identity": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\Uploads\\Blog\\ArticleCategory\\sdsdf\\133032129677818028-Screenshot (8).png",
-      "SourceId": "ServiceHost",
-      "SourceType": "Discovered",
-      "ContentRoot": "F:\\Projects\\Market\\ServiceHost\\wwwroot\\",
-      "BasePath": "_content/ServiceHost",
-      "RelativePath": "Uploads/Blog/ArticleCategory/sdsdf/133032129677818028-Screenshot (8).png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\ArticleCategory\\sdsdf\\133032129677818028-Screenshot (8).png"
+      "OriginalItemSpec": "wwwroot\\Uploads\\Blog\\Authors\\mohsen-jamalzadeh\\133034641382863131-Screenshot 2022-07-27 163445.png"
     }
   ]
 }

@@ -4,8 +4,8 @@ namespace BlogManagement.Application.Contracts.Author
 {
     public  interface  IAuthorApplication
     {
-        OperationResult DefineAuthor(DefinitionAuthor command);
-        OperationResult EditAuthor(EditAuthor command);
+        Task<OperationResult> DefineAuthor(DefinitionAuthor command);
+        Task<OperationResult> EditAuthor(EditAuthor command);
         List<AuthorViewModel> GetAll(AuthorSearchModel searchModel);
         EditAuthor GetDetails(long id);
     }

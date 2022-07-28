@@ -9,7 +9,7 @@ namespace BlogManagement.Application.Contracts.ArticleCategory
         [Required]
         public string Name { get; set; }
 
-        [FileExtension(new string[] {"jpeg","jpg","png"})]
+        [FileExtension(new string[] {".jpeg",".jpg",".png"})]
         [MaxFileSize( 3 * 1024 * 1024)]
         [Required]
         public IFormFile Picture { get; set; }

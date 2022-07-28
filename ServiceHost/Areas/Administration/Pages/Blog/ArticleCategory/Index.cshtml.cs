@@ -28,10 +28,10 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.ArticleCategory
             return Partial("Create",new CreateArticleCategory());
         }
 
-        public JsonResult OnPostCreate(CreateArticleCategory command)
+        public async Task<JsonResult> OnPostCreate(CreateArticleCategory command)
         {
          
-            var res = _articleCategoryApplication.CreateArticleCategory(command);
+            var res =await _articleCategoryApplication.CreateArticleCategory(command);
             return new JsonResult(res);
         }
 
@@ -41,9 +41,9 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.ArticleCategory
             return Partial("Edit",command);
         }
 
-        public JsonResult OnPostEdit(EditArticleCategory command)
+        public async Task<JsonResult> OnPostEdit(EditArticleCategory command)
         {
-            var res = _articleCategoryApplication.EditArticleCategory(command);
+            var res =await _articleCategoryApplication.EditArticleCategory(command);
             return new JsonResult(res);
         }
 
